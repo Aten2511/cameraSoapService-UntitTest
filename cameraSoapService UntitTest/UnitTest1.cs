@@ -11,13 +11,7 @@ namespace cameraSoapService_UntitTest
     [TestClass]
     public class UnitTest1
     {
-        //public CameraSoapDevService.IService1 Service1 { get; set; }
-
-        //[TestInitialize]
-        //public void Initialize()
-        //{
-        //    Service1 = new CameraSoapDevService.IService1();
-        //}
+        
         [TestMethod]
         public void TestGetImages()
         {
