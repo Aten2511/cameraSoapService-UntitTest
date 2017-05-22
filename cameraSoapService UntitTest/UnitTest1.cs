@@ -67,5 +67,21 @@ namespace cameraSoapService_UntitTest
             }
         }
 
+
+        [TestMethod]
+        public void TestDeleteBooking()
+        {
+            using (ServiceReference1.Service1Client client = new ServiceReference1.Service1Client("BasicHttpsBinding_IService1"))
+            {
+                //Arrange
+                int rowAfected = 0;
+
+                //Act
+                rowAfected = client.DeleteBooking(18);
+
+                //Assert
+                Assert.AreEqual(rowAfected, 1);
+            }
+        }
     }
 }
